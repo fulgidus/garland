@@ -11,8 +11,8 @@ updated: YYYY-MM-DD
 
 ## Rules
 
-- DO: <rule>. [[sources/<slug>]]
-- DON'T: <anti-pattern>. [[sources/<slug>]]
+- DO: <rule>. [[<slug>]]
+- DON'T: <anti-pattern>. [[<slug>]]
 
 ## Open questions
 
@@ -20,9 +20,9 @@ updated: YYYY-MM-DD
 
 ## Conflicts
 
-> CONFLICT: <claim A> ([[sources/<slug-a>]]) vs <claim B> ([[sources/<slug-b>]]).
+> CONFLICT: <claim A> ([[<slug-a>]]) vs <claim B> ([[<slug-b>]]).
 > Resolution: <pending | A | B | both apply in different contexts>.
 
 ## Sources
 
-- [[sources/<slug>]]
+- [[<slug>]]

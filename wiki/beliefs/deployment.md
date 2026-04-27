@@ -12,16 +12,16 @@ A service that is hard to deploy, scale, or debug in production was designed tha
 
 ## Rules
 
-- DO: store all config in environment variables; never hardcode or commit configuration. [[sources/twelve-factor-app]]
-- DO: declare and isolate dependencies explicitly; never rely on implicit system-level packages. [[sources/twelve-factor-app]]
-- DO: make processes stateless; all shared state belongs in a backing service (database, cache, queue). [[sources/twelve-factor-app]]
-- DO: keep dev, staging, and production as similar as possible — the gap between them is where bugs live. [[sources/twelve-factor-app]]
-- DO: write logs to stdout; let the platform collect, route, and store them. [[sources/twelve-factor-app]] [[sources/logging-sucks]]
-- DO: strictly separate build, release, and run stages; treat a deployed release as immutable. [[sources/twelve-factor-app]]
-- DO: expose services via port binding, not server-managed injection. [[sources/twelve-factor-app]]
-- DON'T: store session state or any shared mutable state in the process; it breaks horizontal scaling. [[sources/twelve-factor-app]]
-- DON'T: mutate a running release; build a new release and deploy it. [[sources/twelve-factor-app]]
-- DON'T: write application logs to files; that couples the app to the filesystem and the deployment environment. [[sources/twelve-factor-app]]
+- DO: store all config in environment variables; never hardcode or commit configuration. [[twelve-factor-app]]
+- DO: declare and isolate dependencies explicitly; never rely on implicit system-level packages. [[twelve-factor-app]]
+- DO: make processes stateless; all shared state belongs in a backing service (database, cache, queue). [[twelve-factor-app]]
+- DO: keep dev, staging, and production as similar as possible — the gap between them is where bugs live. [[twelve-factor-app]]
+- DO: write logs to stdout; let the platform collect, route, and store them. [[twelve-factor-app]] [[logging-sucks]]
+- DO: strictly separate build, release, and run stages; treat a deployed release as immutable. [[twelve-factor-app]]
+- DO: expose services via port binding, not server-managed injection. [[twelve-factor-app]]
+- DON'T: store session state or any shared mutable state in the process; it breaks horizontal scaling. [[twelve-factor-app]]
+- DON'T: mutate a running release; build a new release and deploy it. [[twelve-factor-app]]
+- DON'T: write application logs to files; that couples the app to the filesystem and the deployment environment. [[twelve-factor-app]]
 
 ## Open questions
 
@@ -34,4 +34,4 @@ _(none)_
 
 ## Sources
 
-- [[sources/twelve-factor-app]]
+- [[twelve-factor-app]]

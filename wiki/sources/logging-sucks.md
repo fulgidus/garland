@@ -31,4 +31,4 @@ Most application logs are unstructured strings written for the developer who wro
 
 ## Topics
 
-- [[../beliefs/logging]]
+- [[logging]]

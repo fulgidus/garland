@@ -12,14 +12,14 @@ Logs are a machine-readable event stream, not prose written for the developer wh
 
 ## Rules
 
-- DO: emit structured logs (JSON or logfmt key-value pairs). [[sources/logging-sucks]]
-- DO: attach a correlation/trace ID to every log line so a full request can be reconstructed. [[sources/logging-sucks]]
-- DO: inject context (request ID, user ID, service name, version) once at the request boundary; propagate via context object. [[sources/logging-sucks]]
-- DO: reserve levels strictly — ERROR = act now, WARN = investigate, INFO = key lifecycle events only, DEBUG = off in production. [[sources/logging-sucks]]
-- DO: treat the log output as a stream (write to stdout/stderr); let the platform route and store it. [[sources/twelve-factor-app]]
-- DON'T: log sensitive data (passwords, tokens, PII) at any level. [[sources/logging-sucks]]
-- DON'T: use free-form interpolated strings as log messages. [[sources/logging-sucks]]
-- DON'T: write logs directly to files from application code; that is the platform's job. [[sources/twelve-factor-app]]
+- DO: emit structured logs (JSON or logfmt key-value pairs). [[logging-sucks]]
+- DO: attach a correlation/trace ID to every log line so a full request can be reconstructed. [[logging-sucks]]
+- DO: inject context (request ID, user ID, service name, version) once at the request boundary; propagate via context object. [[logging-sucks]]
+- DO: reserve levels strictly — ERROR = act now, WARN = investigate, INFO = key lifecycle events only, DEBUG = off in production. [[logging-sucks]]
+- DO: treat the log output as a stream (write to stdout/stderr); let the platform route and store it. [[twelve-factor-app]]
+- DON'T: log sensitive data (passwords, tokens, PII) at any level. [[logging-sucks]]
+- DON'T: use free-form interpolated strings as log messages. [[logging-sucks]]
+- DON'T: write logs directly to files from application code; that is the platform's job. [[twelve-factor-app]]
 
 ## Open questions
 
@@ -31,5 +31,5 @@ _(none)_
 
 ## Sources
 
-- [[sources/logging-sucks]]
-- [[sources/twelve-factor-app]]
+- [[logging-sucks]]
+- [[twelve-factor-app]]

@@ -11,10 +11,10 @@ Catalog of beliefs and entities. Maintained by the agent during `ingest`.
 
 | Page                         | Topic                          | Sources                                               |
 | ---------------------------- | ------------------------------ | ----------------------------------------------------- |
-| [[beliefs/logging]]          | Structured logging             | [[sources/logging-sucks]], [[sources/twelve-factor-app]] |
-| [[beliefs/testing]]          | TDD, test doubles              | [[sources/tdd-fowler]], [[sources/mocks-arent-stubs]] |
-| [[beliefs/design]]           | Simple design rules            | [[sources/beck-design-rules]]                         |
-| [[beliefs/deployment]]       | Twelve-factor service design   | [[sources/twelve-factor-app]]                         |
+| [[logging]]          | Structured logging             | [[logging-sucks]], [[twelve-factor-app]] |
+| [[testing]]          | TDD, test doubles              | [[tdd-fowler]], [[mocks-arent-stubs]] |
+| [[design]]           | Simple design rules            | [[beck-design-rules]]                         |
+| [[deployment]]       | Twelve-factor service design   | [[twelve-factor-app]]                         |
 
 ## Entities
 
@@ -24,8 +24,8 @@ _(empty)_
 
 | Page                                    | Author            | Topic            |
 | --------------------------------------- | ----------------- | ---------------- |
-| [[sources/logging-sucks]]               | Boris Tane        | Logging          |
-| [[sources/tdd-fowler]]                  | Martin Fowler     | Testing / TDD    |
-| [[sources/mocks-arent-stubs]]           | Martin Fowler     | Testing / mocks  |
-| [[sources/beck-design-rules]]           | Kent Beck / Fowler | Design           |
-| [[sources/twelve-factor-app]]           | Adam Wiggins      | Deployment       |
+| [[logging-sucks]]               | Boris Tane        | Logging          |
+| [[tdd-fowler]]                  | Martin Fowler     | Testing / TDD    |
+| [[mocks-arent-stubs]]           | Martin Fowler     | Testing / mocks  |
+| [[beck-design-rules]]           | Kent Beck / Fowler | Design           |
+| [[twelve-factor-app]]           | Adam Wiggins      | Deployment       |

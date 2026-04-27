@@ -29,4 +29,4 @@ TDD is a development rhythm, not a testing strategy. You write a failing test, w
 
 ## Topics
 
-- [[../beliefs/testing]]
+- [[testing]]

@@ -33,4 +33,4 @@ The word "mock" is used loosely to mean any fake object in a test, but Fowler (f
 
 ## Topics
 
-- [[../beliefs/testing]]
+- [[testing]]

@@ -35,4 +35,4 @@ Twelve patterns that make a web service deployable, portable, scalable, and oper
 
 ## Topics
 
-- [[../beliefs/deployment]]
+- [[deployment]]

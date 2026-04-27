@@ -27,4 +27,4 @@ raw: ../../raw/<filename>.md
 
 ## Topics
 
-- [[../beliefs/<topic>]]
+- [[<topic>]]

@@ -12,16 +12,16 @@ Tests are a design tool first, a safety net second. Writing tests before code fo
 
 ## Rules
 
-- DO: write the test before the code; treat it as a design act that defines the interface. [[sources/tdd-fowler]]
-- DO: complete all three steps — Red, Green, Refactor — every cycle. [[sources/tdd-fowler]]
-- DO: start a feature by writing a list of test cases first; sequence them to reach salient design decisions quickly. [[sources/tdd-fowler]]
-- DO: learn the five test double types (Dummy, Fake, Stub, Spy, Mock) and use them precisely. [[sources/mocks-arent-stubs]]
-- DO: use state verification (assert the outcome) by default; use behaviour verification (assert the calls) only when outcome is unobservable. [[sources/mocks-arent-stubs]]
-- DO: complement unit tests with coarse-grained acceptance tests across the whole system. [[sources/mocks-arent-stubs]]
-- DON'T: skip the Refactor step; untouched passing code accumulates design debt faster than no tests at all. [[sources/tdd-fowler]]
-- DON'T: use "mock" as a catch-all for any test double. [[sources/mocks-arent-stubs]]
-- DON'T: mock collaborators that are not genuinely awkward (external I/O, email, time); prefer real objects. [[sources/mocks-arent-stubs]]
-- DON'T: write mockist tests that encode call structure when you only care about the result — they break on refactors. [[sources/mocks-arent-stubs]]
+- DO: write the test before the code; treat it as a design act that defines the interface. [[tdd-fowler]]
+- DO: complete all three steps — Red, Green, Refactor — every cycle. [[tdd-fowler]]
+- DO: start a feature by writing a list of test cases first; sequence them to reach salient design decisions quickly. [[tdd-fowler]]
+- DO: learn the five test double types (Dummy, Fake, Stub, Spy, Mock) and use them precisely. [[mocks-arent-stubs]]
+- DO: use state verification (assert the outcome) by default; use behaviour verification (assert the calls) only when outcome is unobservable. [[mocks-arent-stubs]]
+- DO: complement unit tests with coarse-grained acceptance tests across the whole system. [[mocks-arent-stubs]]
+- DON'T: skip the Refactor step; untouched passing code accumulates design debt faster than no tests at all. [[tdd-fowler]]
+- DON'T: use "mock" as a catch-all for any test double. [[mocks-arent-stubs]]
+- DON'T: mock collaborators that are not genuinely awkward (external I/O, email, time); prefer real objects. [[mocks-arent-stubs]]
+- DON'T: write mockist tests that encode call structure when you only care about the result — they break on refactors. [[mocks-arent-stubs]]
 
 ## Open questions
 
@@ -30,10 +30,10 @@ Tests are a design tool first, a safety net second. Writing tests before code fo
 
 ## Conflicts
 
-> CONFLICT: Classical TDD ([[sources/mocks-arent-stubs]]) says prefer real objects and only double awkward collaborators. Mockist TDD ([[sources/mocks-arent-stubs]]) says always mock collaborators for isolation.
+> CONFLICT: Classical TDD ([[mocks-arent-stubs]]) says prefer real objects and only double awkward collaborators. Mockist TDD ([[mocks-arent-stubs]]) says always mock collaborators for isolation.
 > Resolution: Both are coherent; Fowler is a classicist. Default to classical; use mockist only when isolation genuinely matters more than coupling risk.
 
 ## Sources
 
-- [[sources/tdd-fowler]]
-- [[sources/mocks-arent-stubs]]
+- [[tdd-fowler]]
+- [[mocks-arent-stubs]]

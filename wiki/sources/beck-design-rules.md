@@ -32,4 +32,4 @@ Beck's four rules give a concrete, priority-ordered definition of "good design" 
 
 ## Topics
 
-- [[../beliefs/design]]
+- [[design]]
