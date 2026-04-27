@@ -13,8 +13,9 @@ Catalog of beliefs and entities. Maintained by the agent during `ingest`.
 | ---------------------------- | ------------------------------ | ----------------------------------------------------- |
 | [[logging]]          | Structured logging             | [[logging-sucks]], [[twelve-factor-app]] |
 | [[testing]]          | TDD, test doubles              | [[tdd-fowler]], [[mocks-arent-stubs]] |
-| [[design]]           | Simple design rules            | [[beck-design-rules]]                         |
+| [[design]]           | Simple design rules            | [[beck-design-rules]], [[everything-should-be-typed]] |
 | [[deployment]]       | Twelve-factor service design   | [[twelve-factor-app]]                         |
+| [[typing]]           | Branded / domain types         | [[everything-should-be-typed]]                |
 
 ## Entities
 
@@ -29,3 +30,4 @@ _(empty)_
 | [[mocks-arent-stubs]]           | Martin Fowler     | Testing / mocks  |
 | [[beck-design-rules]]           | Kent Beck / Fowler | Design           |
 | [[twelve-factor-app]]           | Adam Wiggins      | Deployment       |
+| [[everything-should-be-typed]]  | Samuel + Alessio  | Typing           |

@@ -8,3 +8,4 @@ Append-only timeline. One line per `ingest` or `distill`.
 ## [2026-04-27] ingest | Mocks Aren't Stubs (Martin Fowler)
 ## [2026-04-27] ingest | Beck Design Rules (Kent Beck / Fowler)
 ## [2026-04-27] ingest | The Twelve-Factor App (Adam Wiggins)
+## [2026-04-27] ingest | Everything Should Be Typed (Samuel + Alessio Corsi)

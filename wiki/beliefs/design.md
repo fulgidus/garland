@@ -19,6 +19,7 @@ Good software design is not subjective. Beck's four rules provide a concrete, pr
 - DON'T: add abstractions speculatively for future flexibility; extra complexity makes systems harder to change. [[beck-design-rules]]
 - DON'T: treat design quality as a matter of taste; evaluate it against concrete criteria now. [[beck-design-rules]]
 - DON'T: resolve the tension between "no duplication" and "reveals intention" by adding duplication — find the abstraction that satisfies both. [[beck-design-rules]]
+- DO: make invalid states unrepresentable — model the type system so that values that should not exist cannot be constructed. [[everything-should-be-typed]]
 
 ## Open questions
 
@@ -31,3 +32,4 @@ _(none)_
 ## Sources
 
 - [[beck-design-rules]]
+- [[everything-should-be-typed]]
