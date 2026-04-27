@@ -13,45 +13,13 @@ Skills in `skills/` are distilled from wiki beliefs and installable into any age
 ## Install all skills globally (recommended)
 
 ```bash
-# from GitHub (after pushing)
-bunx skills add fulgidus/garland -g -a pi
-
-# or from local path
-bunx skills add /home/fulgidus/Documents/garland -g -a pi
+bun x skills add fulgidus/garland -g -a pi --yes
 ```
 
-`-g` installs to `~/.pi/agent/skills/` (global, all sessions).
-Omit `-g` to install into the current project's `.pi/skills/` instead.
-
-## Install specific skills only
+To update after pushing new distilled skills:
 
 ```bash
-bunx skills add fulgidus/garland --skill branded-types --skill tdd -g -a pi
-```
-
-## Install to multiple agents at once
-
-```bash
-bunx skills add fulgidus/garland -g -a pi -a claude-code -a opencode
-```
-
-## List what's installed
-
-```bash
-bunx skills list
-bunx skills ls -g   # global only
-```
-
-## Update after distilling new skills
-
-```bash
-bunx skills update -g -y
-```
-
-## Remove a skill
-
-```bash
-bunx skills remove simple-design -g
+bun x skills update -g -y
 ```
 
 ## Available skills
