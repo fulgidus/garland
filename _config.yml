@@ -11,7 +11,10 @@ plugins:
 
 # jekyll-wikilinks config
 wikilinks:
-  enabled: true
+  exclude:
+    - types: []
+  d3_graph_data:
+    enabled: false
 
 exclude:
   - raw/
