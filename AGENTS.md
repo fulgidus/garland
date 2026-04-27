@@ -26,7 +26,19 @@ When I say `ingest raw/<file>`:
    - cite sources as `[[sources/<slug>]]` next to each claim.
 4. Update `wiki/index.md` and append a line to `wiki/log.md` in the format
    `## [YYYY-MM-DD] ingest | <title>`.
-5. Summarize what changed in chat. Do not proceed further without my OK.
+5. **Skill audit** — for every belief touched or created in step 3:
+   a. Scan `skills/` for an existing skill that covers the same topic.
+      - If one exists: check whether the new precepts change, extend, or
+        contradict its rules. Flag any staleness in the summary.
+      - If none exists: decide whether the belief is actionable enough to
+        warrant a skill (i.e. an agent could use it as a trigger). If yes,
+        propose a `distill` call with a suggested skill name.
+   b. Identify any precept in the updated beliefs that has no skill and no
+      existing constraint anywhere in `skills/` — flag it as a distillation
+      candidate.
+   c. Do NOT create or modify any skill file at this step. Only report.
+6. Summarize what changed (wiki writes + skill audit findings) in chat.
+   Do not proceed further without my OK.
 
 ## Workflow: distill
 
