@@ -1,4 +1,4 @@
-# cognitive-base
+# Garland
 
 Personal substrate for distilling articles, posts, and talks I agree with into
 `SKILL.md` files attachable to projects.
