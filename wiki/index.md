@@ -21,6 +21,10 @@ Catalog of beliefs and entities. Maintained by the agent during `ingest`.
 
 _(empty)_
 
+## Using Skills
+
+See [[using-skills]] — how to install distilled skills into pi globally or per-project.
+
 ## Sources
 
 | Page                                    | Author            | Topic            |
