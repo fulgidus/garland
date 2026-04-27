@@ -1,10 +1,23 @@
 title: Garland
 description: Alessio's personal cognitive base — beliefs, sources, skills.
-theme: minima
 
-# don't process raw/ sources as Jekyll pages
+theme: just-the-docs
+color_scheme: dark
+
+plugins:
+  - jekyll-wikilinks
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# jekyll-wikilinks config
+wikilinks:
+  enabled: true
+
 exclude:
   - raw/
   - skills/
   - SPEC.md
   - AGENTS.md
+  - Gemfile
+  - Gemfile.lock
+  - "*.tar.gz"

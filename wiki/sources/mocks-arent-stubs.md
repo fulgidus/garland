@@ -1,7 +1,7 @@
 ---
-clipped: 2026-04-27
-url: https://martinfowler.com/articles/mocksArentStubs.html
-raw: ../../raw/mocks-arent-stubs.md
+title: "Mocks Aren't Stubs"
+parent: "Sources"
+grand_parent: "Wiki"
 ---
 
 # Mocks Aren't Stubs

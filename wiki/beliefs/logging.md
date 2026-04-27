@@ -1,6 +1,7 @@
 ---
-topic: logging
-updated: 2026-04-27
+title: "Logging"
+parent: "Beliefs"
+grand_parent: "Wiki"
 ---
 
 # Logging

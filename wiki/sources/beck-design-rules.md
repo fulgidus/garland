@@ -1,7 +1,7 @@
 ---
-clipped: 2026-04-27
-url: https://martinfowler.com/bliki/BeckDesignRules.html
-raw: ../../raw/beck-design-rules.md
+title: "Beck Design Rules"
+parent: "Sources"
+grand_parent: "Wiki"
 ---
 
 # Beck Design Rules

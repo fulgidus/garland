@@ -1,7 +1,7 @@
 ---
-clipped: 2026-04-27
-url: https://12factor.net/
-raw: ../../raw/twelve-factor-app.md
+title: "Twelve-Factor App"
+parent: "Sources"
+grand_parent: "Wiki"
 ---
 
 # The Twelve-Factor App

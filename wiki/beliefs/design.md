@@ -1,6 +1,7 @@
 ---
-topic: design
-updated: 2026-04-27
+title: "Design"
+parent: "Beliefs"
+grand_parent: "Wiki"
 ---
 
 # Design

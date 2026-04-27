@@ -1,3 +1,8 @@
+---
+title: "Wiki"
+nav_order: 2
+---
+
 # Wiki index
 
 Catalog of beliefs and entities. Maintained by the agent during `ingest`.

@@ -1,7 +1,7 @@
 ---
-clipped: 2026-04-27
-url: https://martinfowler.com/bliki/TestDrivenDevelopment.html
-raw: ../../raw/tdd-fowler.md
+title: "TDD (Fowler)"
+parent: "Sources"
+grand_parent: "Wiki"
 ---
 
 # Test Driven Development

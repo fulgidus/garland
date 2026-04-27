@@ -1,7 +1,7 @@
 ---
-clipped: 2026-04-27
-url: https://loggingsucks.com/
-raw: ../../raw/logging-sucks.md
+title: "Logging Sucks"
+parent: "Sources"
+grand_parent: "Wiki"
 ---
 
 # Logging Sucks. And Here's How to Make It Better.

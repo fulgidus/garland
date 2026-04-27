@@ -1,6 +1,7 @@
 ---
-topic: deployment
-updated: 2026-04-27
+title: "Deployment"
+parent: "Beliefs"
+grand_parent: "Wiki"
 ---
 
 # Deployment
