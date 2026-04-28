@@ -1,16 +1,15 @@
 ---
 clipped: 2026-04-27
 url: https://sot.dev/everything-should-be-typed.html
-author: Samuel (original) · Alessio Giulio Corsi (FE rendition, 14/04/2026)
+author: Samuel Onoja (original) · Alessio Giulio Corsi (FE rendition, 14/04/2026)
 raw: ../../raw/everything-should-be-typed.md
 ---
 
 # Everything Should Be Typed: Scalar Types Are Not Enough
 
-> Original: [sot.dev/everything-should-be-typed](https://sot.dev/everything-should-be-typed.html) by Samuel, 13 April 2026.
-> This file merges the original article with Alessio's frontend-centred rendition
-> ("I tipi scalari non bastano: la prospettiva del frontend").
-> Sections marked **[AC]** are Alessio's additions or FE-specific framings.
+> Original: [sot.dev/everything-should-be-typed](https://sot.dev/everything-should-be-typed.html) by Samuel, 13 April 2026.  
+> This file merges the original article with Alessio's frontend-centred rendition ("I tipi scalari non bastano: la prospettiva del frontend").  
+> Sections marked **[AC]** are Alessio's additions or FE-specific framings.  
 
 ---
 
@@ -53,12 +52,12 @@ processOrderPayout(
 
 TypeScript uses a *structural* type system: two values with the same shape are interchangeable.
 
-| What `tsc` sees | What we meant                   |
-| --------------- | ------------------------------- |
-| `string`        | Shop ID                         |
-| `string`        | Customer ID                     |
-| `number`        | Gross amount in cents            |
-| `number`        | Platform fee in cents            |
+| What `tsc` sees | What we meant         |
+| --------------- | --------------------- |
+| `string`        | Shop ID               |
+| `string`        | Customer ID           |
+| `number`        | Gross amount in cents |
+| `number`        | Platform fee in cents |
 
 Same type → no error → silent bug.
 
@@ -273,14 +272,14 @@ type OrderPayoutParams = z.infer<typeof OrderPayoutParamsSchema>;
 
 ### **[AC]** Manual vs Zod vs Ajv
 
-| Criterion         | Manual    | Zod                   | Ajv (JSON Schema)   |
-| ----------------- | --------- | --------------------- | ------------------- |
-| Bundle size       | 0 kB      | ~14 kB (min+gz)       | ~30 kB (min+gz)     |
-| Native branded    | DIY       | `.brand()` ✅          | no, manual cast     |
-| Type inference    | manual    | `z.infer` ✅           | no (codegen)        |
-| Runtime validate  | if/throw  | `.parse()` ✅          | `validate()` ✅      |
-| Schema compose    | fragile   | excellent             | `$ref` (verbose)    |
-| FE ecosystem      | anything  | RHF, tRPC, Hono       | Express             |
+| Criterion        | Manual   | Zod             | Ajv (JSON Schema) |
+| ---------------- | -------- | --------------- | ----------------- |
+| Bundle size      | 0 kB     | ~14 kB (min+gz) | ~30 kB (min+gz)   |
+| Native branded   | DIY      | `.brand()` ✅    | no, manual cast   |
+| Type inference   | manual   | `z.infer` ✅     | no (codegen)      |
+| Runtime validate | if/throw | `.parse()` ✅    | `validate()` ✅    |
+| Schema compose   | fragile  | excellent       | `$ref` (verbose)  |
+| FE ecosystem     | anything | RHF, tRPC, Hono | Express           |
 
 **Recommendation:** Zod is the natural default for TypeScript frontend projects.
 Ajv makes sense when you're starting from existing JSON Schema (e.g. OpenAPI).
@@ -332,12 +331,12 @@ The alternative? Trusting that every developer on the team, across every PR, in 
 
 ## Summary
 
-| Level                  | What it prevents                      |
-| ---------------------- | ------------------------------------- |
-| Positional parameters  | Nothing                               |
-| Object with fields     | Positional swaps                      |
-| Branded types          | Semantic swaps at compile-time        |
-| Branded + validation   | Invalid data at runtime               |
+| Level                 | What it prevents               |
+| --------------------- | ------------------------------ |
+| Positional parameters | Nothing                        |
+| Object with fields    | Positional swaps               |
+| Branded types         | Semantic swaps at compile-time |
+| Branded + validation  | Invalid data at runtime        |
 
 Scalar types describe **what a value looks like**.
 Domain types describe **what a value means**.
