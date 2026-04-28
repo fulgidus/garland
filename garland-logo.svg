@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="garland-title garland-desc">
+  <title id="garland-title">Garland</title>
+  <desc id="garland-desc">Bald head silhouette crowned with a five-node gradient garland.</desc>
+
+  <defs>
+    <linearGradient id="grad-tech" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <linearGradient id="grad-head" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e3a8a"/>
+      <stop offset="1" stop-color="#0e7490"/>
+    </linearGradient>
+
+    <style>
+      #silhouette {
+        opacity: 0;
+        transform-origin: 32px 44px;
+        transform: scale(0.92);
+        animation: head-in 0.6s ease-out 0.1s forwards;
+      }
+
+      #thread {
+        stroke-dasharray: 90;
+        stroke-dashoffset: 90;
+        animation: thread-draw 1.2s ease-out 0.4s forwards;
+      }
+
+      #nodes circle {
+        opacity: 0;
+        transform-origin: center;
+        animation: node-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
+                   node-pulse 3.2s ease-in-out infinite;
+      }
+
+      #nodes circle:nth-child(1) { animation-delay: 1.0s, 2.5s; transform-box: fill-box; }
+      #nodes circle:nth-child(2) { animation-delay: 1.2s, 2.7s; transform-box: fill-box; }
+      #nodes circle:nth-child(3) { animation-delay: 1.4s, 2.9s; transform-box: fill-box; }
+      #nodes circle:nth-child(4) { animation-delay: 1.6s, 3.1s; transform-box: fill-box; }
+      #nodes circle:nth-child(5) { animation-delay: 1.8s, 3.3s; transform-box: fill-box; }
+
+      @keyframes head-in {
+        to { opacity: 1; transform: scale(1); }
+      }
+
+      @keyframes thread-draw {
+        to { stroke-dashoffset: 0; }
+      }
+
+      @keyframes node-pop {
+        from { opacity: 0; transform: scale(0); }
+        to   { opacity: 1; transform: scale(1); }
+      }
+
+      @keyframes node-pulse {
+        0%, 100% { transform: scale(1); }
+        50%      { transform: scale(1.12); }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        #silhouette, #thread, #nodes circle {
+          animation: none;
+          opacity: 1;
+          stroke-dashoffset: 0;
+          transform: none;
+        }
+      }
+    </style>
+  </defs>
+
+  <path id="silhouette" d="M 32 22
+    C 23 22, 19 29, 19 37
+    C 19 42, 20 46, 22 49
+    L 22 53
+    C 18 54, 14 57, 12 62
+    L 12 64
+    L 52 64
+    L 52 62
+    C 50 57, 46 54, 42 53
+    L 42 49
+    C 44 46, 45 42, 45 37
+    C 45 29, 41 22, 32 22 Z" fill="url(#grad-head)"/>
+
+  <path id="thread" d="M 14 36 C 14 8, 50 8, 50 36" stroke="url(#grad-tech)" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <g id="nodes" fill="url(#grad-tech)">
+    <circle cx="14" cy="36" r="3.5"/>
+    <circle cx="20" cy="20" r="3"/>
+    <circle cx="32" cy="13" r="4.5"/>
+    <circle cx="44" cy="20" r="3"/>
+    <circle cx="50" cy="36" r="3.5"/>
+  </g>
+</svg>
